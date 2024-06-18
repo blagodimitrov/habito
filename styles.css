@@ -1,0 +1,163 @@
+body {
+  padding-left: 15%;
+  padding-right: 15%;
+  user-select: none;
+  background-color: rgb(85, 115, 137);
+}
+
+.wrapper {
+  margin: auto;
+  margin-top: 50px;
+  background-color: #243c51;
+  padding: 0 50px 20px 50px;
+  border-radius: 25px;
+  min-width: 800px;
+  max-width: 800px;
+}
+
+.header-rank {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  text-align: center;
+}
+
+.rank {
+  background-color: #7fffd4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bolder;
+  color: rgb(36, 60, 81);
+  border-radius: 20px;
+  min-width: 40px;
+  min-height: 20px;
+}
+
+.title-name {
+  font-size: 50px;
+  text-align: left;
+  color: aquamarine;
+}
+
+.score,
+.combo {
+  text-align: right;
+  color: aliceblue;
+}
+
+.week-number {
+  font-size: 25px;
+  color: aliceblue;
+}
+
+.week {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.week-day {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-color: aquamarine;
+  text-align: center;
+  width: 90px;
+  height: 70px;
+  border-radius: 15px;
+}
+
+.journal-entry {
+  color: aliceblue;
+  text-align: center;
+  padding: 25px;
+  padding-bottom: 0;
+  border: solid;
+  border-width: 3px;
+  border-radius: 15px;
+  border-color: aquamarine;
+  overflow-y: scroll;
+  max-height: 150px;
+  min-height: 100px;
+}
+
+.journal-entry::-webkit-scrollbar {
+  display: none;
+}
+
+.journal-week-number {
+  color: aquamarine;
+  font-size: 16px;
+  font-weight: bolder;
+  padding-bottom: 15px;
+}
+
+.week-day.completed {
+  background-color: aquamarine;
+}
+
+.week-day.failed {
+  background-color: tomato;
+  border-color: tomato;
+  color: aliceblue;
+}
+
+.completed-day {
+  font-weight: bolder;
+}
+
+.success,
+.fail {
+  font-size: 20px;
+  color: aliceblue;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.success {
+  position: relative;
+  left: -12px;
+  color: aquamarine;
+}
+
+.fail {
+  position: relative;
+  font-size: 22px;
+  left: 12px;
+  color: tomato;
+}
+
+.input-text {
+  background-color: rgb(82, 100, 113);
+  width: 74%;
+  height: 80px;
+  border-style: solid;
+  border-color: aquamarine;
+  border-radius: 20px;
+  color: aliceblue;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.introduction {
+  color: aquamarine;
+  padding: 0 20px 0 20px;
+}
+
+.input-button {
+  margin-left: 10px;
+  width: 19%;
+  height: 102px;
+  border: none;
+  background-color: aquamarine;
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(36, 60, 81);
+  border-radius: 20px;
+  cursor: pointer;
+}
